@@ -1,9 +1,14 @@
 const repeatString = function(string, num) {
     let arr = [];
-    for (let i = 0; i < num; i++) {
-        arr.push(string);
+    if (num > 0) {
+        for (let i = 0; i < num; i++) {
+            arr.push(string);
+        }
     }
-    return arr.join()
+    else {
+        return "ERROR"
+    }       
+    return arr.join('')
 };
 
 // Do not edit below this line
